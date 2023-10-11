@@ -1,0 +1,154 @@
+
+
+.CardTaskComponent{
+  width: calc(100% - 40px);
+  padding: 16px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+
+  .body-brief{
+    padding-left: 16px;
+    border-left: 3px solid #D71313;
+
+    .title{
+      color: #2E2E2E;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    .desc{
+      color: #6B6969;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      max-height: 3.6em; /* Approximately 2 lines of text, adjust as needed */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Limit the text to two lines */
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .body-brief.Critical{
+    border-color: #D71313;
+  }
+  .body-brief.HighPriority{
+    border-color: #FF7A00;
+  }
+  .body-brief.MediumPriority{
+    border-color: #FFE500;
+  }
+  .body-brief.LowPriority{
+    border-color: #00A3FF;
+  }
+
+
+
+  .details-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+
+
+    .details-wrapper{
+      display: flex;
+
+      .icon{
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F0F4FD;
+        border-radius: 100%;
+
+        span{
+          font-size: 16px;
+          color: #4A44CF;
+        }
+      }
+
+      .hori-wrapper{
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 6px;
+
+        .label-tag{
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        .details-tag{
+          color: #615F5F;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+
+        .status-tag{
+          min-width: 40px;
+          text-align: center;
+          padding: 4px 12px;
+          color: #ffffff;
+          background: #0038FF;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          border-radius: 6px;
+        }
+
+        .users-img{
+          img{
+            min-width: 24px;
+            min-height: 24px;
+            max-width: 24px;
+            max-height: 24px;
+          }
+        }
+
+        .users-img.devs{
+          img{
+            margin-left: -12px;
+            border-width: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.CardTaskComponent:hover{
+  background: #4A44CF;
+  .title{
+    color: #f1f1f1;
+  }
+
+  .desc{
+    color: #f1f1f1;
+  }
+
+  .body-brief{
+    color: #f1f1f1 !important;
+  }
+
+
+  .label-tag, .details-tag{
+    color: #f1f1f1 !important;
+  }
+}

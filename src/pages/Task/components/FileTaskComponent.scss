@@ -1,0 +1,25 @@
+
+
+.FileTaskComponent{
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+
+  .file-container{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;border-radius: 16px;
+    background: #F1807E;
+
+    span{
+      font-size: 36px;
+      color: #A52D2D;
+    }
+  }
+
+  .filename{
+    font-size: 12px;
+  }
+}

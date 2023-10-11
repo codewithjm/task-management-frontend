@@ -1,0 +1,57 @@
+
+
+.BoardLabelTaskComponent{
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  border-radius: 8px;
+
+  .label{
+    margin-right: auto !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+
+  }
+}
+
+.BoardLabelTaskComponent.Open{
+  background: #4A44CF;
+
+  .label, span{
+    color: #ffffff;
+  }
+
+  span{
+    cursor : pointer;
+  }
+
+  span:hover{
+    font-weight: 600;
+    background: #5f5ad9;
+  }
+}
+
+.BoardLabelTaskComponent.InProgress{
+  background: #008B16;
+
+  .label{
+    color: #ffffff;
+  }
+}
+
+.BoardLabelTaskComponent.Review{
+  background: #FFE500;
+
+  .label{
+    color: #2e2e2e;
+  }
+}
+
+.BoardLabelTaskComponent.Close{
+  background: #00A3FF;
+
+  .label{
+    color: #ffffff;
+  }
+}

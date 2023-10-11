@@ -1,0 +1,28 @@
+
+
+small.level-tag{
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  padding: 4px 8px;
+  min-width: 32px;
+  border-radius: 6px;
+}
+
+small.level-tag.Critical{
+  background: #FEECF0;
+  color: #CC0F35;
+}
+
+small.level-tag.HighPriority{
+  background: #fff1eb;
+  color: #944c00;
+}
+small.level-tag.MediumPriority{
+  background: #FFFAEB;
+  color: #946C00;
+}
+small.level-tag.LowPriority{
+  background: #eff1fa;
+  color: #3850b7;
+}

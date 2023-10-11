@@ -1,0 +1,77 @@
+
+
+.SelectMultiUserMoleculeGC{
+  width: 100%;
+  max-width: 360px;
+  min-height: 260px;
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px solid #f1f1f1;
+  padding: 12px 16px;
+  border-radius: 6px;
+
+  ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+    li{
+      width: calc(100% - 24px);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+
+      img{
+        min-width: 36px;
+        min-height: 36px;
+        max-height: 36px;
+        max-width: 36px;
+        border-radius: 100%;
+        border: 2px solid #f1f1f1;
+      }
+
+      .sl-det{
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        padding-left: 6px;
+
+        label{
+          margin-bottom: 0px;
+        }
+
+        small{
+          margin-top: -4px !important;
+          color: #7e7e7e !important;
+        }
+      }
+    }
+
+    li.active{
+      background: #5f5ad9 !important;
+      color: #f1f1f1 !important;
+
+      label{
+        color: #f1f1f1 !important;
+      }
+      small{
+        color: #f1f1f1 !important;
+      }
+    }
+
+    li:hover{
+      background: #f1f1f1;
+      label{
+        color: #3e3e3e;
+      }
+      small{
+        color: #7e7e7e !important;
+      }
+    }
+  }
+
+}
